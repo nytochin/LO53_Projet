@@ -1,0 +1,143 @@
+\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet}{}\section{com.\+servlet.\+positioning.\+Positioning\+Servlet Class Reference}
+\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet}\index{com.\+servlet.\+positioning.\+Positioning\+Servlet@{com.\+servlet.\+positioning.\+Positioning\+Servlet}}
+Inheritance diagram for com.\+servlet.\+positioning.\+Positioning\+Servlet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a9db4dd4f8aedc0ab1cac3e3e176aa8d1}{Positioning\+Servlet} ()
+\item 
+\hyperlink{classcom_1_1servlet_1_1utilities_1_1_location}{Location} \hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_acfcf3108d3987e97c3987bed9dc7dbbc}{compute\+Location} (Array\+List$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint} $>$ fingerprints\+Array, \hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} sample)
+\item 
+Array\+List$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint} $>$ \hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_ad8301771d7378366e179f22db3ceca37}{find\+Three\+Nearest\+Locations} (Array\+List$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint} $>$ fingerprints, \hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} sample)
+\item 
+Linked\+Hash\+Map$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint}, Double $>$ \hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a39469c71850600fe98758668e72ba179}{sort\+Hash\+Map\+By\+Values} (Hash\+Map$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint}, Double $>$ passed\+Map)
+\item 
+double \hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_afdb65734629bb1daec20f1cf445551ab}{rssi\+\_\+distance} (\hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} s1, \hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} s2)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_abe6f2257a6e05ec7c1b2804b8933a633}{do\+Get} (Http\+Servlet\+Request request, Http\+Servlet\+Response response)  throws Servlet\+Exception, I\+O\+Exception 
+\item 
+void \hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a82b069325682ed474014b606134163f8}{do\+Post} (Http\+Servlet\+Request request, Http\+Servlet\+Response response)  throws Servlet\+Exception, I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Servlet \hyperlink{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet}{Positioning\+Servlet} This servlet is used for locating the mobile device. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}!Positioning\+Servlet@{Positioning\+Servlet}}
+\index{Positioning\+Servlet@{Positioning\+Servlet}!com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}}
+\subsubsection[{\texorpdfstring{Positioning\+Servlet()}{PositioningServlet()}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+servlet.\+positioning.\+Positioning\+Servlet.\+Positioning\+Servlet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a9db4dd4f8aedc0ab1cac3e3e176aa8d1}{}\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a9db4dd4f8aedc0ab1cac3e3e176aa8d1}
+Map containing M\+AC address of waypoints and the R\+S\+SI values \begin{DoxySeeAlso}{See also}
+Http\+Servlet\+::\+Http\+Servlet() Default constructor of a servlet 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}!compute\+Location@{compute\+Location}}
+\index{compute\+Location@{compute\+Location}!com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}}
+\subsubsection[{\texorpdfstring{compute\+Location(\+Array\+List$<$ Fingerprint $>$ fingerprints\+Array, Rssi\+Sample sample)}{computeLocation(ArrayList< Fingerprint > fingerprintsArray, RssiSample sample)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location} com.\+servlet.\+positioning.\+Positioning\+Servlet.\+compute\+Location (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ {\bf Fingerprint} $>$}]{fingerprints\+Array, }
+\item[{{\bf Rssi\+Sample}}]{sample}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_acfcf3108d3987e97c3987bed9dc7dbbc}{}\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_acfcf3108d3987e97c3987bed9dc7dbbc}
+Compute the location from distributions of R\+S\+SI values. 
+\begin{DoxyParams}{Parameters}
+{\em fingerprints\+Array} & an array of fingerprints \\
+\hline
+{\em sample} & a Rssi\+Sample \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the location of the mobile device 
+\end{DoxyReturn}
+\index{com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}!do\+Get@{do\+Get}}
+\index{do\+Get@{do\+Get}!com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}}
+\subsubsection[{\texorpdfstring{do\+Get(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response)}{doGet(HttpServletRequest request, HttpServletResponse response)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+servlet.\+positioning.\+Positioning\+Servlet.\+do\+Get (
+\begin{DoxyParamCaption}
+\item[{Http\+Servlet\+Request}]{request, }
+\item[{Http\+Servlet\+Response}]{response}
+\end{DoxyParamCaption}
+) throws Servlet\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_abe6f2257a6e05ec7c1b2804b8933a633}{}\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_abe6f2257a6e05ec7c1b2804b8933a633}
+\begin{DoxySeeAlso}{See also}
+Http\+Servlet\+::do\+Get(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response) 
+\end{DoxySeeAlso}
+\index{com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}!do\+Post@{do\+Post}}
+\index{do\+Post@{do\+Post}!com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}}
+\subsubsection[{\texorpdfstring{do\+Post(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response)}{doPost(HttpServletRequest request, HttpServletResponse response)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+servlet.\+positioning.\+Positioning\+Servlet.\+do\+Post (
+\begin{DoxyParamCaption}
+\item[{Http\+Servlet\+Request}]{request, }
+\item[{Http\+Servlet\+Response}]{response}
+\end{DoxyParamCaption}
+) throws Servlet\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a82b069325682ed474014b606134163f8}{}\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a82b069325682ed474014b606134163f8}
+\begin{DoxySeeAlso}{See also}
+Http\+Servlet\+::do\+Post(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response) When a post request is received, this function is called and process it. Forward request from mobile to waypoints, then retrieve data from waypoints and compute the location and send the location to mobile. 
+\end{DoxySeeAlso}
+\index{com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}!find\+Three\+Nearest\+Locations@{find\+Three\+Nearest\+Locations}}
+\index{find\+Three\+Nearest\+Locations@{find\+Three\+Nearest\+Locations}!com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}}
+\subsubsection[{\texorpdfstring{find\+Three\+Nearest\+Locations(\+Array\+List$<$ Fingerprint $>$ fingerprints, Rssi\+Sample sample)}{findThreeNearestLocations(ArrayList< Fingerprint > fingerprints, RssiSample sample)}}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<${\bf Fingerprint}$>$ com.\+servlet.\+positioning.\+Positioning\+Servlet.\+find\+Three\+Nearest\+Locations (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ {\bf Fingerprint} $>$}]{fingerprints, }
+\item[{{\bf Rssi\+Sample}}]{sample}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_ad8301771d7378366e179f22db3ceca37}{}\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_ad8301771d7378366e179f22db3ceca37}
+Find the three nearest locations from the current position according to the R\+S\+SI distances 
+\begin{DoxyParams}{Parameters}
+{\em fingerprints} & an array of fingerprints \\
+\hline
+{\em sample} & a Rssi\+Sample \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the location of the mobile device 
+\end{DoxyReturn}
+\index{com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}!rssi\+\_\+distance@{rssi\+\_\+distance}}
+\index{rssi\+\_\+distance@{rssi\+\_\+distance}!com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}}
+\subsubsection[{\texorpdfstring{rssi\+\_\+distance(\+Rssi\+Sample s1, Rssi\+Sample s2)}{rssi_distance(RssiSample s1, RssiSample s2)}}]{\setlength{\rightskip}{0pt plus 5cm}double com.\+servlet.\+positioning.\+Positioning\+Servlet.\+rssi\+\_\+distance (
+\begin{DoxyParamCaption}
+\item[{{\bf Rssi\+Sample}}]{s1, }
+\item[{{\bf Rssi\+Sample}}]{s2}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_afdb65734629bb1daec20f1cf445551ab}{}\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_afdb65734629bb1daec20f1cf445551ab}
+Compute the rssi\+\_\+distance between two Rssi\+Samples 
+\begin{DoxyParams}{Parameters}
+{\em s1} & a Rssi\+Sample \\
+\hline
+{\em s2} & a Rssi\+Sample \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double value corresponding to the rssi\+\_\+distance 
+\end{DoxyReturn}
+\index{com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}!sort\+Hash\+Map\+By\+Values@{sort\+Hash\+Map\+By\+Values}}
+\index{sort\+Hash\+Map\+By\+Values@{sort\+Hash\+Map\+By\+Values}!com\+::servlet\+::positioning\+::\+Positioning\+Servlet@{com\+::servlet\+::positioning\+::\+Positioning\+Servlet}}
+\subsubsection[{\texorpdfstring{sort\+Hash\+Map\+By\+Values(\+Hash\+Map$<$ Fingerprint, Double $>$ passed\+Map)}{sortHashMapByValues(HashMap< Fingerprint, Double > passedMap)}}]{\setlength{\rightskip}{0pt plus 5cm}Linked\+Hash\+Map$<${\bf Fingerprint}, Double$>$ com.\+servlet.\+positioning.\+Positioning\+Servlet.\+sort\+Hash\+Map\+By\+Values (
+\begin{DoxyParamCaption}
+\item[{Hash\+Map$<$ {\bf Fingerprint}, Double $>$}]{passed\+Map}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a39469c71850600fe98758668e72ba179}{}\label{classcom_1_1servlet_1_1positioning_1_1_positioning_servlet_a39469c71850600fe98758668e72ba179}
+Sort a hash map in decreasing order 
+\begin{DoxyParams}{Parameters}
+{\em passed\+Map} & a Hash\+Map$<$\+Fingerprint, double$>$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Linked\+Hash\+Map in the right order 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/servlet/positioning/Positioning\+Servlet.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet}{}\section{com.\+servlet.\+debug.\+Debug\+Servlet Class Reference}
+\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet}\index{com.\+servlet.\+debug.\+Debug\+Servlet@{com.\+servlet.\+debug.\+Debug\+Servlet}}
+Inheritance diagram for com.\+servlet.\+debug.\+Debug\+Servlet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1servlet_1_1debug_1_1_debug_servlet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a0059d3aa114ee24bcb93829c9bd81f6d}{Debug\+Servlet} ()
+\item 
+\hyperlink{classcom_1_1servlet_1_1utilities_1_1_location}{Location} {\bfseries compute\+Location} (Array\+List$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint} $>$ fingerprints\+Array, \hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} sample)\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet_ae8805a36c0afc05ab2e74605c87206af}{}\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet_ae8805a36c0afc05ab2e74605c87206af}
+
+\item 
+Array\+List$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint} $>$ {\bfseries find\+Three\+Nearest\+Locations} (Array\+List$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint} $>$ fingerprints, \hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} sample)\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a1cdab7caa7adb17d45ddcd680855e645}{}\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a1cdab7caa7adb17d45ddcd680855e645}
+
+\item 
+Linked\+Hash\+Map$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint}, Double $>$ {\bfseries sort\+Hash\+Map\+By\+Values} (Hash\+Map$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint}, Double $>$ passed\+Map)\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet_ac79a511aafd41c7932723bcba104370f}{}\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet_ac79a511aafd41c7932723bcba104370f}
+
+\item 
+double {\bfseries rssi\+\_\+distance} (\hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} s1, \hyperlink{classcom_1_1servlet_1_1utilities_1_1_rssi_sample}{Rssi\+Sample} s2)\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a1befae824b1f294a6b631ace389b787a}{}\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a1befae824b1f294a6b631ace389b787a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a3027091a3a446812b8a61e828d9e6197}{do\+Get} (Http\+Servlet\+Request request, Http\+Servlet\+Response response)  throws Servlet\+Exception, I\+O\+Exception 
+\item 
+void \hyperlink{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a43cf6d116dea0cb2415d5c343e804c14}{do\+Post} (Http\+Servlet\+Request request, Http\+Servlet\+Response response)  throws Servlet\+Exception, I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Servlet implementation class Positioning\+Servlet 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::servlet\+::debug\+::\+Debug\+Servlet@{com\+::servlet\+::debug\+::\+Debug\+Servlet}!Debug\+Servlet@{Debug\+Servlet}}
+\index{Debug\+Servlet@{Debug\+Servlet}!com\+::servlet\+::debug\+::\+Debug\+Servlet@{com\+::servlet\+::debug\+::\+Debug\+Servlet}}
+\subsubsection[{\texorpdfstring{Debug\+Servlet()}{DebugServlet()}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+servlet.\+debug.\+Debug\+Servlet.\+Debug\+Servlet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a0059d3aa114ee24bcb93829c9bd81f6d}{}\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a0059d3aa114ee24bcb93829c9bd81f6d}
+\begin{DoxySeeAlso}{See also}
+Http\+Servlet\+::\+Http\+Servlet() 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{com\+::servlet\+::debug\+::\+Debug\+Servlet@{com\+::servlet\+::debug\+::\+Debug\+Servlet}!do\+Get@{do\+Get}}
+\index{do\+Get@{do\+Get}!com\+::servlet\+::debug\+::\+Debug\+Servlet@{com\+::servlet\+::debug\+::\+Debug\+Servlet}}
+\subsubsection[{\texorpdfstring{do\+Get(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response)}{doGet(HttpServletRequest request, HttpServletResponse response)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+servlet.\+debug.\+Debug\+Servlet.\+do\+Get (
+\begin{DoxyParamCaption}
+\item[{Http\+Servlet\+Request}]{request, }
+\item[{Http\+Servlet\+Response}]{response}
+\end{DoxyParamCaption}
+) throws Servlet\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a3027091a3a446812b8a61e828d9e6197}{}\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a3027091a3a446812b8a61e828d9e6197}
+\begin{DoxySeeAlso}{See also}
+Http\+Servlet\+::do\+Get(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response) 
+\end{DoxySeeAlso}
+\index{com\+::servlet\+::debug\+::\+Debug\+Servlet@{com\+::servlet\+::debug\+::\+Debug\+Servlet}!do\+Post@{do\+Post}}
+\index{do\+Post@{do\+Post}!com\+::servlet\+::debug\+::\+Debug\+Servlet@{com\+::servlet\+::debug\+::\+Debug\+Servlet}}
+\subsubsection[{\texorpdfstring{do\+Post(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response)}{doPost(HttpServletRequest request, HttpServletResponse response)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+servlet.\+debug.\+Debug\+Servlet.\+do\+Post (
+\begin{DoxyParamCaption}
+\item[{Http\+Servlet\+Request}]{request, }
+\item[{Http\+Servlet\+Response}]{response}
+\end{DoxyParamCaption}
+) throws Servlet\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a43cf6d116dea0cb2415d5c343e804c14}{}\label{classcom_1_1servlet_1_1debug_1_1_debug_servlet_a43cf6d116dea0cb2415d5c343e804c14}
+\begin{DoxySeeAlso}{See also}
+Http\+Servlet\+::do\+Post(\+Http\+Servlet\+Request request, Http\+Servlet\+Response response) 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/servlet/debug/Debug\+Servlet.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{classcom_1_1servlet_1_1utilities_1_1_query_with_context}{}\section{com.\+servlet.\+utilities.\+Query\+With\+Context Class Reference}
+\label{classcom_1_1servlet_1_1utilities_1_1_query_with_context}\index{com.\+servlet.\+utilities.\+Query\+With\+Context@{com.\+servlet.\+utilities.\+Query\+With\+Context}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries query\+Calibration} (Print\+Writer out)  throws Naming\+Exception \hypertarget{classcom_1_1servlet_1_1utilities_1_1_query_with_context_ae9b1219f8bf7e148ccbbe81d11eece82}{}\label{classcom_1_1servlet_1_1utilities_1_1_query_with_context_ae9b1219f8bf7e148ccbbe81d11eece82}
+
+\item 
+static void \hyperlink{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a4addb0131978ad1a87649fbd1deb95e8}{query\+Calibration\+Add\+Location} (String bssid, String x, String y, String z)  throws Naming\+Exception 
+\item 
+static Array\+List$<$ String $>$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a20420a1c44bf30bcd9115964a749f481}{query\+Calibration\+Select\+Waypoints} ()  throws Naming\+Exception 
+\item 
+static void \hyperlink{classcom_1_1servlet_1_1utilities_1_1_query_with_context_ab7f8d28e27cb314ccfe9e9abe270676a}{query\+Calibration\+Add\+Measurement} (String ypmac, String x, String y, String z, Double value)  throws Naming\+Exception 
+\item 
+static Array\+List$<$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_fingerprint}{Fingerprint} $>$ \hyperlink{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a3b7623f0b35b4cfa23a210b4ef73f89a}{query\+Get\+All\+Measurement} ()  throws Naming\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}!query\+Calibration\+Add\+Location@{query\+Calibration\+Add\+Location}}
+\index{query\+Calibration\+Add\+Location@{query\+Calibration\+Add\+Location}!com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}}
+\subsubsection[{\texorpdfstring{query\+Calibration\+Add\+Location(\+String bssid, String x, String y, String z)}{queryCalibrationAddLocation(String bssid, String x, String y, String z)}}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+servlet.\+utilities.\+Query\+With\+Context.\+query\+Calibration\+Add\+Location (
+\begin{DoxyParamCaption}
+\item[{String}]{bssid, }
+\item[{String}]{x, }
+\item[{String}]{y, }
+\item[{String}]{z}
+\end{DoxyParamCaption}
+) throws Naming\+Exception\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a4addb0131978ad1a87649fbd1deb95e8}{}\label{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a4addb0131978ad1a87649fbd1deb95e8}
+Add location into database. 
+\begin{DoxyParams}{Parameters}
+{\em bssid} & a string \\
+\hline
+{\em x} & the x coordinate of the location \\
+\hline
+{\em y} & the y coordinate of the location \\
+\hline
+{\em z} & the z coordinate of the location \\
+\hline
+\end{DoxyParams}
+\index{com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}!query\+Calibration\+Add\+Measurement@{query\+Calibration\+Add\+Measurement}}
+\index{query\+Calibration\+Add\+Measurement@{query\+Calibration\+Add\+Measurement}!com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}}
+\subsubsection[{\texorpdfstring{query\+Calibration\+Add\+Measurement(\+String ypmac, String x, String y, String z, Double value)}{queryCalibrationAddMeasurement(String ypmac, String x, String y, String z, Double value)}}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\+servlet.\+utilities.\+Query\+With\+Context.\+query\+Calibration\+Add\+Measurement (
+\begin{DoxyParamCaption}
+\item[{String}]{ypmac, }
+\item[{String}]{x, }
+\item[{String}]{y, }
+\item[{String}]{z, }
+\item[{Double}]{value}
+\end{DoxyParamCaption}
+) throws Naming\+Exception\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1servlet_1_1utilities_1_1_query_with_context_ab7f8d28e27cb314ccfe9e9abe270676a}{}\label{classcom_1_1servlet_1_1utilities_1_1_query_with_context_ab7f8d28e27cb314ccfe9e9abe270676a}
+Add location into database. 
+\begin{DoxyParams}{Parameters}
+{\em ypmac} & a string of the M\+AC address of the waypoint \\
+\hline
+{\em x} & the x coordinate of the location \\
+\hline
+{\em y} & the y coordinate of the location \\
+\hline
+{\em z} & the z coordinate of the location \\
+\hline
+{\em value} & the R\+S\+SI value \\
+\hline
+\end{DoxyParams}
+\index{com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}!query\+Calibration\+Select\+Waypoints@{query\+Calibration\+Select\+Waypoints}}
+\index{query\+Calibration\+Select\+Waypoints@{query\+Calibration\+Select\+Waypoints}!com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}}
+\subsubsection[{\texorpdfstring{query\+Calibration\+Select\+Waypoints()}{queryCalibrationSelectWaypoints()}}]{\setlength{\rightskip}{0pt plus 5cm}static Array\+List$<$String$>$ com.\+servlet.\+utilities.\+Query\+With\+Context.\+query\+Calibration\+Select\+Waypoints (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Naming\+Exception\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a20420a1c44bf30bcd9115964a749f481}{}\label{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a20420a1c44bf30bcd9115964a749f481}
+Get all the waypoints M\+AC address. \begin{DoxyReturn}{Returns}
+an array of all the M\+AC addresses 
+\end{DoxyReturn}
+\index{com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}!query\+Get\+All\+Measurement@{query\+Get\+All\+Measurement}}
+\index{query\+Get\+All\+Measurement@{query\+Get\+All\+Measurement}!com\+::servlet\+::utilities\+::\+Query\+With\+Context@{com\+::servlet\+::utilities\+::\+Query\+With\+Context}}
+\subsubsection[{\texorpdfstring{query\+Get\+All\+Measurement()}{queryGetAllMeasurement()}}]{\setlength{\rightskip}{0pt plus 5cm}static Array\+List$<${\bf Fingerprint}$>$ com.\+servlet.\+utilities.\+Query\+With\+Context.\+query\+Get\+All\+Measurement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Naming\+Exception\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a3b7623f0b35b4cfa23a210b4ef73f89a}{}\label{classcom_1_1servlet_1_1utilities_1_1_query_with_context_a3b7623f0b35b4cfa23a210b4ef73f89a}
+Get all the measurements. \begin{DoxyReturn}{Returns}
+an array of all the fingerprints 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/com/servlet/utilities/Query\+With\+Context.\+java\end{DoxyCompactItemize}
