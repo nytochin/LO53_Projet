@@ -1,0 +1,67 @@
+\hypertarget{http__deamon_8c}{}\section{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/http\+\_\+deamon.c File Reference}
+\label{http__deamon_8c}\index{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/http\+\_\+deamon.\+c@{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/http\+\_\+deamon.\+c}}
+
+
+This file contains the function for the management of the requests sended by the map server.  
+
+
+{\ttfamily \#include \char`\"{}http\+\_\+deamon.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pcap-\/thread.\+h\char`\"{}}\\*
+Include dependency graph for http\+\_\+deamon.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{http__deamon_8c_a8b45745ccfc9143b8018fffcf7c4c0d3}{answer\+\_\+to\+\_\+connection} (void $\ast$cls, struct M\+H\+D\+\_\+\+Connection $\ast$connection, const char $\ast$url, const char $\ast$method, const char $\ast$version, const char $\ast$upload\+\_\+data, size\+\_\+t $\ast$upload\+\_\+data\+\_\+size, void $\ast$$\ast$con\+\_\+cls)
+\begin{DoxyCompactList}\small\item\em answer to the mapserver Http request \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_element}{Element} $\ast$ \hyperlink{http__deamon_8c_ae9a40f931aeffc206a0d29a3f8be1141}{tracked\+\_\+devices}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the function for the management of the requests sended by the map server. 
+
+\begin{DoxyAuthor}{Author}
+Zeufack Arnel -\/ Member of an L\+O53 group-\/project (Other Members\+: T\+O\+N\+Y D\+U\+O\+N\+G -\/ Y\+V\+O\+N M\+B\+O\+U\+G\+U\+E\+M -\/ J\+O\+E\+L W\+A\+B\+O) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 Juin 2016
+\end{DoxyDate}
+In this file, we catch the request made by the http server, we extract the informations (mobile device mac address) then we calculage the average signal strenght of the device based on the rssi samples captured 
+
+\subsection{Function Documentation}
+\hypertarget{http__deamon_8c_a8b45745ccfc9143b8018fffcf7c4c0d3}{}\index{http\+\_\+deamon.\+c@{http\+\_\+deamon.\+c}!answer\+\_\+to\+\_\+connection@{answer\+\_\+to\+\_\+connection}}
+\index{answer\+\_\+to\+\_\+connection@{answer\+\_\+to\+\_\+connection}!http\+\_\+deamon.\+c@{http\+\_\+deamon.\+c}}
+\subsubsection[{answer\+\_\+to\+\_\+connection}]{\setlength{\rightskip}{0pt plus 5cm}int answer\+\_\+to\+\_\+connection (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{cls, }
+\item[{struct M\+H\+D\+\_\+\+Connection $\ast$}]{connection, }
+\item[{const char $\ast$}]{url, }
+\item[{const char $\ast$}]{method, }
+\item[{const char $\ast$}]{version, }
+\item[{const char $\ast$}]{upload\+\_\+data, }
+\item[{size\+\_\+t $\ast$}]{upload\+\_\+data\+\_\+size, }
+\item[{void $\ast$$\ast$}]{con\+\_\+cls}
+\end{DoxyParamCaption}
+)}\label{http__deamon_8c_a8b45745ccfc9143b8018fffcf7c4c0d3}
+
+
+answer to the mapserver Http request 
+
+\begin{DoxyReturn}{Returns}
+it returns an integer providing the status of the response 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & it took many usefuls parameters as it\textquotesingle{}s recommended in the microhttp library documentation \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{http__deamon_8c_ae9a40f931aeffc206a0d29a3f8be1141}{}\index{http\+\_\+deamon.\+c@{http\+\_\+deamon.\+c}!tracked\+\_\+devices@{tracked\+\_\+devices}}
+\index{tracked\+\_\+devices@{tracked\+\_\+devices}!http\+\_\+deamon.\+c@{http\+\_\+deamon.\+c}}
+\subsubsection[{tracked\+\_\+devices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element}$\ast$ tracked\+\_\+devices}\label{http__deamon_8c_ae9a40f931aeffc206a0d29a3f8be1141}

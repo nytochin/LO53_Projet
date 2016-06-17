@@ -1,0 +1,134 @@
+\hypertarget{pcap-thread_8c}{}\section{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/pcap-\/thread.c File Reference}
+\label{pcap-thread_8c}\index{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/pcap-\/thread.\+c@{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/pcap-\/thread.\+c}}
+
+
+This file contains the body of the threads functions which were executed in the main file.  
+
+
+{\ttfamily \#include \char`\"{}pcap-\/thread.\+h\char`\"{}}\\*
+Include dependency graph for pcap-\/thread.c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{pcap-thread_8c_a80533e12c13720352712455e86eac14d}{tcpdump\+\_\+function} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em execute the tcpdump\+\_\+function thread \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{pcap-thread_8c_aa6cca3d417df0d64edcfbfaa2f445aab}{pcap\+\_\+function} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em execute the pcap\+\_\+function thread \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{pcap-thread_8c_aa7fbc627d49703073084fc66e79ef7c0}{Clear\+Outdated\+Values} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em execute the Clear\+Outdated\+Values thread \end{DoxyCompactList}\item 
+void \hyperlink{pcap-thread_8c_af7e8fb860db3c87ed3bec362216a5c7c}{get\+\_\+ap\+\_\+mac} (u\+\_\+char $\ast$$\ast$mac, char $\ast$interface)
+\begin{DoxyCompactList}\small\item\em gets the waypoint wifi mac address \end{DoxyCompactList}\item 
+int \hyperlink{pcap-thread_8c_a70cd3fb82216b3537d8691fcbd6dee10}{samples\+\_\+log\+\_\+size} ()
+\begin{DoxyCompactList}\small\item\em get the size of the samples log file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_element}{Element} $\ast$ \hyperlink{pcap-thread_8c_ae9a40f931aeffc206a0d29a3f8be1141}{tracked\+\_\+devices}
+\item 
+int \hyperlink{pcap-thread_8c_a2c9ace6f67f776d032a6e22230e3c9a9}{S\+L\+E\+E\+P\+\_\+\+V\+A\+L\+U\+E} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains the body of the threads functions which were executed in the main file. 
+
+\begin{DoxyAuthor}{Author}
+Zeufack Arnel -\/ Member of an L\+O53 group-\/project (Other Members\+: T\+O\+N\+Y D\+U\+O\+N\+G -\/ Y\+V\+O\+N M\+B\+O\+U\+G\+U\+E\+M -\/ J\+O\+E\+L W\+A\+B\+O) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 Juin 2016
+\end{DoxyDate}
+This file contains the body of the threads functions which were executed in the main file. It is one of the most important file of the program 
+
+\subsection{Function Documentation}
+\hypertarget{pcap-thread_8c_aa7fbc627d49703073084fc66e79ef7c0}{}\index{pcap-\/thread.\+c@{pcap-\/thread.\+c}!Clear\+Outdated\+Values@{Clear\+Outdated\+Values}}
+\index{Clear\+Outdated\+Values@{Clear\+Outdated\+Values}!pcap-\/thread.\+c@{pcap-\/thread.\+c}}
+\subsubsection[{Clear\+Outdated\+Values}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Clear\+Outdated\+Values (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{pcap-thread_8c_aa7fbc627d49703073084fc66e79ef7c0}
+
+
+execute the Clear\+Outdated\+Values thread 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & it is N\+U\+L\+L in reallity \\
+\hline
+\end{DoxyParams}
+\hypertarget{pcap-thread_8c_af7e8fb860db3c87ed3bec362216a5c7c}{}\index{pcap-\/thread.\+c@{pcap-\/thread.\+c}!get\+\_\+ap\+\_\+mac@{get\+\_\+ap\+\_\+mac}}
+\index{get\+\_\+ap\+\_\+mac@{get\+\_\+ap\+\_\+mac}!pcap-\/thread.\+c@{pcap-\/thread.\+c}}
+\subsubsection[{get\+\_\+ap\+\_\+mac}]{\setlength{\rightskip}{0pt plus 5cm}void get\+\_\+ap\+\_\+mac (
+\begin{DoxyParamCaption}
+\item[{u\+\_\+char $\ast$$\ast$}]{mac, }
+\item[{char $\ast$}]{interface}
+\end{DoxyParamCaption}
+)}\label{pcap-thread_8c_af7e8fb860db3c87ed3bec362216a5c7c}
+
+
+gets the waypoint wifi mac address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mac} & a string which will contain the founded mac address \\
+\hline
+{\em interface} & the interface of the wifi \\
+\hline
+\end{DoxyParams}
+\hypertarget{pcap-thread_8c_aa6cca3d417df0d64edcfbfaa2f445aab}{}\index{pcap-\/thread.\+c@{pcap-\/thread.\+c}!pcap\+\_\+function@{pcap\+\_\+function}}
+\index{pcap\+\_\+function@{pcap\+\_\+function}!pcap-\/thread.\+c@{pcap-\/thread.\+c}}
+\subsubsection[{pcap\+\_\+function}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ pcap\+\_\+function (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\label{pcap-thread_8c_aa6cca3d417df0d64edcfbfaa2f445aab}
+
+
+execute the pcap\+\_\+function thread 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & it is the interface of the waypoint used to sniff the traffic \\
+\hline
+\end{DoxyParams}
+\hypertarget{pcap-thread_8c_a70cd3fb82216b3537d8691fcbd6dee10}{}\index{pcap-\/thread.\+c@{pcap-\/thread.\+c}!samples\+\_\+log\+\_\+size@{samples\+\_\+log\+\_\+size}}
+\index{samples\+\_\+log\+\_\+size@{samples\+\_\+log\+\_\+size}!pcap-\/thread.\+c@{pcap-\/thread.\+c}}
+\subsubsection[{samples\+\_\+log\+\_\+size}]{\setlength{\rightskip}{0pt plus 5cm}int samples\+\_\+log\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{pcap-thread_8c_a70cd3fb82216b3537d8691fcbd6dee10}
+
+
+get the size of the samples log file 
+
+\begin{DoxyReturn}{Returns}
+it returns the file size in Kb 
+\end{DoxyReturn}
+\hypertarget{pcap-thread_8c_a80533e12c13720352712455e86eac14d}{}\index{pcap-\/thread.\+c@{pcap-\/thread.\+c}!tcpdump\+\_\+function@{tcpdump\+\_\+function}}
+\index{tcpdump\+\_\+function@{tcpdump\+\_\+function}!pcap-\/thread.\+c@{pcap-\/thread.\+c}}
+\subsubsection[{tcpdump\+\_\+function}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ tcpdump\+\_\+function (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{pcap-thread_8c_a80533e12c13720352712455e86eac14d}
+
+
+execute the tcpdump\+\_\+function thread 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & it is the interface of the waypoint used in the program \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{pcap-thread_8c_a2c9ace6f67f776d032a6e22230e3c9a9}{}\index{pcap-\/thread.\+c@{pcap-\/thread.\+c}!S\+L\+E\+E\+P\+\_\+\+V\+A\+L\+U\+E@{S\+L\+E\+E\+P\+\_\+\+V\+A\+L\+U\+E}}
+\index{S\+L\+E\+E\+P\+\_\+\+V\+A\+L\+U\+E@{S\+L\+E\+E\+P\+\_\+\+V\+A\+L\+U\+E}!pcap-\/thread.\+c@{pcap-\/thread.\+c}}
+\subsubsection[{S\+L\+E\+E\+P\+\_\+\+V\+A\+L\+U\+E}]{\setlength{\rightskip}{0pt plus 5cm}int S\+L\+E\+E\+P\+\_\+\+V\+A\+L\+U\+E = 1}\label{pcap-thread_8c_a2c9ace6f67f776d032a6e22230e3c9a9}
+\hypertarget{pcap-thread_8c_ae9a40f931aeffc206a0d29a3f8be1141}{}\index{pcap-\/thread.\+c@{pcap-\/thread.\+c}!tracked\+\_\+devices@{tracked\+\_\+devices}}
+\index{tracked\+\_\+devices@{tracked\+\_\+devices}!pcap-\/thread.\+c@{pcap-\/thread.\+c}}
+\subsubsection[{tracked\+\_\+devices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element}$\ast$ tracked\+\_\+devices}\label{pcap-thread_8c_ae9a40f931aeffc206a0d29a3f8be1141}

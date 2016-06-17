@@ -1,0 +1,235 @@
+\hypertarget{rssi__list_8c}{}\section{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/rssi\+\_\+list.c File Reference}
+\label{rssi__list_8c}\index{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/rssi\+\_\+list.\+c@{/home/junicode/\+Documents/\+L\+O53\+\_\+\+Project/\+L\+O53\+\_\+\+A\+P\+\_\+\+Development/rssi\+\_\+list.\+c}}
+
+
+This file contain the diffeerent functions necessay for the management of the linked-\/lists used by the program.  
+
+
+{\ttfamily \#include \char`\"{}rssi\+\_\+list.\+h\char`\"{}}\\*
+Include dependency graph for rssi\+\_\+list.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{rssi__list_8c_ae44fbcd3fb8dd7a4a9015cf282b16406}{add\+\_\+value} (\hyperlink{struct_deque}{Deque} $\ast$list, double value)
+\begin{DoxyCompactList}\small\item\em add\+\_\+value adds a new R\+S\+S\+I value at the end of the deque. \end{DoxyCompactList}\item 
+\hyperlink{struct_element}{Element} $\ast$ \hyperlink{rssi__list_8c_a24453a17eaee3f01419138bd3350031e}{add\+\_\+element} (\hyperlink{struct_element}{Element} $\ast$$\ast$list, u\+\_\+char $\ast$mac\+\_\+value)
+\begin{DoxyCompactList}\small\item\em add\+\_\+element adds an element (a new device node) to the list. Elements shall be ordered. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{rssi__list_8c_a24da2773bae32fa61d7575b189c3cbed}{mac\+\_\+maching} (u\+\_\+char $\ast$mac1, u\+\_\+char $\ast$mac2)
+\begin{DoxyCompactList}\small\item\em This function makes the comparison of two mac addresses to check if they are equals. \end{DoxyCompactList}\item 
+\hyperlink{struct_element}{Element} $\ast$ \hyperlink{rssi__list_8c_a6c7015cd077f7305b2733eb8b9817f97}{find\+\_\+mac} (\hyperlink{struct_element}{Element} $\ast$list, u\+\_\+char $\ast$mac\+\_\+value)
+\begin{DoxyCompactList}\small\item\em find\+\_\+mac looks up for a M\+A\+C address in the list. \end{DoxyCompactList}\item 
+\hyperlink{struct_element}{Element} $\ast$ \hyperlink{rssi__list_8c_a215f49fa181cccf9bac2400da4215bb2}{find\+\_\+deque} (\hyperlink{struct_element}{Element} $\ast$list, \hyperlink{struct_deque}{Deque} $\ast$deq)
+\begin{DoxyCompactList}\small\item\em This function find a specific \hyperlink{struct_deque}{Deque} in the \hyperlink{struct_element}{Element} List. \end{DoxyCompactList}\item 
+void \hyperlink{rssi__list_8c_af2c0c85c2a2a3efefa7c5dc3c03c3e4a}{calculate\+\_\+avg} (\hyperlink{struct_element}{Element} $\ast$$\ast$list, u\+\_\+char $\ast$mac\+\_\+value, u\+\_\+char $\ast$nb\+\_\+samples, u\+\_\+char $\ast$avg\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Calculate avg ss values from a given string mac address. \end{DoxyCompactList}\item 
+void \hyperlink{rssi__list_8c_a535cd027bf00cf939326973eb2af2a37}{clear\+\_\+outdated\+\_\+values} (\hyperlink{struct_deque}{Deque} $\ast$list)
+\begin{DoxyCompactList}\small\item\em clear\+\_\+outdated\+\_\+values removes all outdated R\+S\+S\+I in a R\+S\+S\+I deque. \end{DoxyCompactList}\item 
+void \hyperlink{rssi__list_8c_a12d58f846d9ea5a76d657991fc0bb6ab}{clear\+\_\+outdated\+\_\+\+Elements} (\hyperlink{struct_element}{Element} $\ast$$\ast$list)
+\begin{DoxyCompactList}\small\item\em clear\+\_\+outdated\+\_\+\+Elements removes all outdated Elements in the linked-\/list. \end{DoxyCompactList}\item 
+void \hyperlink{rssi__list_8c_a41893db8a4089cb1c64fe72069044637}{decrement\+\_\+all\+\_\+deadlines} (\hyperlink{struct_element}{Element} $\ast$list)
+\begin{DoxyCompactList}\small\item\em This function decrement every second the deadline value of all the samples included in an element list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contain the diffeerent functions necessay for the management of the linked-\/lists used by the program. 
+
+This header file belongs to the \hyperlink{rssi__list_8c}{rssi\+\_\+list.\+c} file.
+
+\begin{DoxyAuthor}{Author}
+Zeufack Arnel -\/ Member of an L\+O53 group-\/project (Other Members\+: T\+O\+N\+Y D\+U\+O\+N\+G -\/ Y\+V\+O\+N M\+B\+O\+U\+G\+U\+E\+M -\/ J\+O\+E\+L W\+A\+B\+O) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 Juin 2016
+\end{DoxyDate}
+This file contain the diffeerent functions necessay for the management of the linked-\/lists used by the program It contain many important functions such as add\+\_\+deque, add\+\_\+element, find\+\_\+mac, calculate\+\_\+avg, and some others..
+
+\begin{DoxyAuthor}{Author}
+Zeufack Arnel -\/ Member of an L\+O53 group-\/project (Other Members\+: T\+O\+N\+Y D\+U\+O\+N\+G -\/ Y\+V\+O\+N M\+B\+O\+U\+G\+U\+E\+M -\/ J\+O\+E\+L W\+A\+B\+O) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15 Juin 2016
+\end{DoxyDate}
+It describes the prototypes of the functions used in \hyperlink{rssi__list_8c}{rssi\+\_\+list.\+c} 
+
+\subsection{Function Documentation}
+\hypertarget{rssi__list_8c_a24453a17eaee3f01419138bd3350031e}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!add\+\_\+element@{add\+\_\+element}}
+\index{add\+\_\+element@{add\+\_\+element}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{add\+\_\+element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element}$\ast$ add\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$$\ast$}]{list, }
+\item[{u\+\_\+char $\ast$}]{mac\+\_\+value}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_a24453a17eaee3f01419138bd3350031e}
+
+
+add\+\_\+element adds an element (a new device node) to the list. Elements shall be ordered. 
+
+\begin{DoxyReturn}{Returns}
+the added element pointer. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em list} & a pointer to the list head pointer. \\
+\hline
+{\em mac\+\_\+value} & the M\+A\+C address of the new node to be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_ae44fbcd3fb8dd7a4a9015cf282b16406}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!add\+\_\+value@{add\+\_\+value}}
+\index{add\+\_\+value@{add\+\_\+value}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{add\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}void add\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{{\bf Deque} $\ast$}]{list, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_ae44fbcd3fb8dd7a4a9015cf282b16406}
+
+
+add\+\_\+value adds a new R\+S\+S\+I value at the end of the deque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & deque to append the element to. \\
+\hline
+{\em value} & the R\+S\+S\+I value (d\+Bm, do not forget to convert when inserting!) \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_af2c0c85c2a2a3efefa7c5dc3c03c3e4a}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!calculate\+\_\+avg@{calculate\+\_\+avg}}
+\index{calculate\+\_\+avg@{calculate\+\_\+avg}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{calculate\+\_\+avg}]{\setlength{\rightskip}{0pt plus 5cm}void calculate\+\_\+avg (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$$\ast$}]{list, }
+\item[{u\+\_\+char $\ast$}]{mac\+\_\+value, }
+\item[{u\+\_\+char $\ast$}]{nb\+\_\+samples, }
+\item[{u\+\_\+char $\ast$}]{avg\+\_\+value}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_af2c0c85c2a2a3efefa7c5dc3c03c3e4a}
+
+
+Calculate avg ss values from a given string mac address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mac\+\_\+value} & the string M\+A\+C address necessary to identify the device to which calculation is needed. \\
+\hline
+{\em list} & a pointer to the list head pointer. \\
+\hline
+{\em nb\+\_\+samples} & is a pointer that will contain the number of sample we need to know. \\
+\hline
+{\em avg\+\_\+value} & is a pointer that will contain the average rssi\+\_\+value based on the captured samples. \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_a12d58f846d9ea5a76d657991fc0bb6ab}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!clear\+\_\+outdated\+\_\+\+Elements@{clear\+\_\+outdated\+\_\+\+Elements}}
+\index{clear\+\_\+outdated\+\_\+\+Elements@{clear\+\_\+outdated\+\_\+\+Elements}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{clear\+\_\+outdated\+\_\+\+Elements}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+\_\+outdated\+\_\+\+Elements (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$$\ast$}]{list}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_a12d58f846d9ea5a76d657991fc0bb6ab}
+
+
+clear\+\_\+outdated\+\_\+\+Elements removes all outdated Elements in the linked-\/list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the \hyperlink{struct_element}{Element} (devices) list in which the outdated devices need to be removed \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_a535cd027bf00cf939326973eb2af2a37}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!clear\+\_\+outdated\+\_\+values@{clear\+\_\+outdated\+\_\+values}}
+\index{clear\+\_\+outdated\+\_\+values@{clear\+\_\+outdated\+\_\+values}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{clear\+\_\+outdated\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+\_\+outdated\+\_\+values (
+\begin{DoxyParamCaption}
+\item[{{\bf Deque} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_a535cd027bf00cf939326973eb2af2a37}
+
+
+clear\+\_\+outdated\+\_\+values removes all outdated R\+S\+S\+I in a R\+S\+S\+I deque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the deque from which to filter the outdated values. \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_a41893db8a4089cb1c64fe72069044637}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!decrement\+\_\+all\+\_\+deadlines@{decrement\+\_\+all\+\_\+deadlines}}
+\index{decrement\+\_\+all\+\_\+deadlines@{decrement\+\_\+all\+\_\+deadlines}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{decrement\+\_\+all\+\_\+deadlines}]{\setlength{\rightskip}{0pt plus 5cm}void decrement\+\_\+all\+\_\+deadlines (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$}]{list}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_a41893db8a4089cb1c64fe72069044637}
+
+
+This function decrement every second the deadline value of all the samples included in an element list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The \hyperlink{struct_element}{Element} list head pointer \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_a215f49fa181cccf9bac2400da4215bb2}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!find\+\_\+deque@{find\+\_\+deque}}
+\index{find\+\_\+deque@{find\+\_\+deque}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{find\+\_\+deque}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element}$\ast$ find\+\_\+deque (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$}]{list, }
+\item[{{\bf Deque} $\ast$}]{deq}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_a215f49fa181cccf9bac2400da4215bb2}
+
+
+This function find a specific \hyperlink{struct_deque}{Deque} in the \hyperlink{struct_element}{Element} List. 
+
+\begin{DoxyReturn}{Returns}
+it return a pointer to the \hyperlink{struct_element}{Element} in which the deque is located 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the \hyperlink{struct_element}{Element} list head pointer \\
+\hline
+{\em deq} & the address of the \hyperlink{struct_deque}{Deque} to find \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_a6c7015cd077f7305b2733eb8b9817f97}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!find\+\_\+mac@{find\+\_\+mac}}
+\index{find\+\_\+mac@{find\+\_\+mac}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{find\+\_\+mac}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Element}$\ast$ find\+\_\+mac (
+\begin{DoxyParamCaption}
+\item[{{\bf Element} $\ast$}]{list, }
+\item[{u\+\_\+char $\ast$}]{mac\+\_\+value}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_a6c7015cd077f7305b2733eb8b9817f97}
+
+
+find\+\_\+mac looks up for a M\+A\+C address in the list. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the corresponding element, N\+U\+L\+L if not found. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list head pointer. \\
+\hline
+{\em mac\+\_\+value} & the M\+A\+C address to search. \\
+\hline
+\end{DoxyParams}
+\hypertarget{rssi__list_8c_a24da2773bae32fa61d7575b189c3cbed}{}\index{rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}!mac\+\_\+maching@{mac\+\_\+maching}}
+\index{mac\+\_\+maching@{mac\+\_\+maching}!rssi\+\_\+list.\+c@{rssi\+\_\+list.\+c}}
+\subsubsection[{mac\+\_\+maching}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mac\+\_\+maching (
+\begin{DoxyParamCaption}
+\item[{u\+\_\+char $\ast$}]{mac1, }
+\item[{u\+\_\+char $\ast$}]{mac2}
+\end{DoxyParamCaption}
+)}\label{rssi__list_8c_a24da2773bae32fa61d7575b189c3cbed}
+
+
+This function makes the comparison of two mac addresses to check if they are equals. 
+
+\begin{DoxyReturn}{Returns}
+it return 0 if they are not equal and 1 if they are equal 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em mac1} & the first string mac address \\
+\hline
+{\em mac2} & the second string mac address \\
+\hline
+\end{DoxyParams}
