@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jwabo.lo53_project.SettingsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_setting" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ip server : "
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:gravity="left" />
+        <EditText
+            android:id="@+id/ipServer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.0.0.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ip port : "
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:gravity="left"/>
+        <EditText
+            android:id="@+id/ipPort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="8080"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Path : "
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:gravity="left"/>
+        <EditText
+            android:id="@+id/path"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint=""/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"/>
+</TableLayout>
